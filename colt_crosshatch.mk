@@ -53,7 +53,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.colt.maintainer=lavas
 
 $(call inherit-product-if-exists, vendor/google/crosshatch/crosshatch-vendor.mk)
-
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
 
