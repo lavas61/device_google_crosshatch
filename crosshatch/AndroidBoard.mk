@@ -35,8 +35,8 @@ INSTALLED_RADIOIMAGE_TARGET += $(INSTALLED_PERSISTIMAGE_TARGET)
 
 
 INTERNAL_KERNEL_MODULES := \
-	$(foreach file,$(wildcard device/google/crosshatch-kernel/*.ko \
-	    device/google/crosshatch-kernel/modules.dep),\
+	$(foreach file,$(wildcard device/google/bluecross/*.ko \
+	    device/google/bluecross/modules.dep),\
 	    $(file):$(TARGET_OUT_VENDOR)/lib/modules/$(notdir $(file)))
 
 INSTALLED_KERNEL_MODULES := $(call copy-many-files,$(INTERNAL_KERNEL_MODULES))
