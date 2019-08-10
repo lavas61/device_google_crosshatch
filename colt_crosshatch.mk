@@ -36,6 +36,7 @@ PRODUCT_DEVICE := crosshatch
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 3 XL
 PRODUCT_MANUFACTURER := Google
+RELEASE_TYPE := COLT_OFFICIAL
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=crosshatch \
@@ -44,3 +45,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 $(call inherit-product-if-exists, vendor/google/crosshatch/crosshatch-vendor.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+
+# Maintainer Prop
+PRODUCT_PROPERTY_OVERRIDES += \
+  	ro.colt.maintainer=Nitin1438 & legents
